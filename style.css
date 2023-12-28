@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Mulish', sans-serif;
+}
+
+:root {
+	--primary-color: #6b43ff;
+	--text-color: #323760;
+	--f-size: 16px;
+}
+
+body {
+	height: 100vh;
+	padding-top: 35px;
+}
+
+.container {
+	margin: auto;
+	width: 440px;
+	height: fit-content;
+	border-radius: 8px;
+	overflow: hidden;
+	background-color: #fefefe;
+	padding: 40px 32px;
+	display: flex;
+	flex-direction: column;
+	box-shadow: 0rem 0.2rem 1.5rem -0.4rem rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+	font-size: 25.5px;
+	margin-bottom: 1.4rem;
+}
+
+.sosial-login {
+	display: flex;
+	gap: 1rem;
+}
+
+.sosial-login .btn-sosial {
+	width: 100%;
+	height: 46px;
+	border-radius: 8px;
+	border: 0.07rem solid #6667b0;
+	background-color: #fefefe;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0.6rem;
+	color: var(--text-color);
+	font-size: var(--f-size);
+	cursor: pointer;
+	font-weight: 700;
+	transition: all 0.3s ease;
+}
+
+.btn-sosial:hover {
+	color: var(--primary-color);
+	border-color: var(--primary-color);
+}
+
+.btn-sosial .google {
+	width: 20px;
+}
+
+.btn-sosial .apple {
+	width: 24px;
+}
+
+.line {
+	width: 100%;
+	height: 20px;
+	margin: 15px 0 10px;
+	text-align: center;
+	position: relative;
+}
+
+.line::after,
+.line::before {
+	content: '';
+	position: absolute;
+	width: 43%;
+	height: 1px;
+	background-color: rgba(0, 0, 0, 0.4);
+	top: 70%;
+	right: 0;
+}
+
+.line::before {
+	left: 0;
+}
+
+.line p {
+	font-size: var(--f-size);
+	color: var(--text-color);
+}
+
+form label {
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+	color: var(--text-color);
+	margin: 13px 0 5px;
+}
+
+.input-box {
+	position: relative;
+}
+
+.input-box input {
+	width: 100%;
+	height: 46px;
+	text-indent: 20px;
+	font-size: var(--f-size);
+	border-radius: 0.5rem;
+	border: 0.07rem solid #1d1d1d;
+	outline: none;
+	font-weight: 500;
+}
+
+.input-box input:focus {
+	border-color: var(--primary-color);
+}
+
+.input-box input:focus + i {
+	color: var(--primary-color);
+}
+
+.input-box i {
+	position: absolute;
+	cursor: pointer;
+	font-size: 20px;
+	right: 15px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.btn-login {
+	margin-top: 30px;
+	height: 46px;
+	font-size: 18px;
+	font-weight: bold;
+	background-color: var(--primary-color);
+	color: #fefefe;
+	border-radius: 0.5rem;
+	border: 0.07rem solid var(--primary-color);
+	box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+	cursor: pointer;
+	transition: all 100ms ease;
+}
+
+.btn-login:hover {
+	transform: scale(0.99);
+	font-size: 17px;
+	background-color: #5222f0;
+}
+
+.forget-password {
+	margin-top: 30px;
+	font-size: 14px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.forget-password span:nth-child(1) {
+	color: var(--primary-color);
+	cursor: pointer;
+}
+
+.forget-password span:nth-child(1):hover {
+	text-decoration: underline;
+}
+
+.forget-password span a {
+	text-decoration: none;
+	margin-left: 3px;
+}
+
+.forget-password span a:hover {
+	text-decoration: underline;
+}
