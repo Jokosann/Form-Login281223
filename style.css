@@ -20,7 +20,7 @@ body {
 
 .container {
 	margin: auto;
-	width: 440px;
+	max-width: 440px;
 	height: fit-content;
 	border-radius: 8px;
 	overflow: hidden;
@@ -183,4 +183,19 @@ form label {
 
 .forget-password span a:hover {
 	text-decoration: underline;
+}
+
+@media screen and (max-width: 440px) {
+	body {
+		padding-top: 75px;
+	}
+	h1 {
+		font-size: 24px;
+	}
+	.container {
+		width: calc(100vw - 2rem);
+	}
+	.forget-password {
+		font-size: 13px;
+	}
 }
